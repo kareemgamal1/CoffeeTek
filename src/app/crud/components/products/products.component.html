@@ -1,38 +1,15 @@
 <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <section class="facilities">
-  <h1>Our Proudcts</h1>
-  <div class="row">
-    <div class="facilities-col">
-      <h1>
-        Hot Drinks <i class="fa fa-coffee" style="color: #AF7F4B"></i>
-      </h1>
-      <br />
-      <br />
-      <h3>Hot Drinks</h3>
-      <p>
-        Enjoying a warming drink can be a great way to relax for a fresh day start.
-      </p>
-    </div>
-    <div class="facilities-col">
-      <h1>Cold Drinks <i class="fa fa-glass" style="color: #AF7F4B"></i></h1>
-      <br />
-      <br />
-      <h3>Cold Drinks</h3>
-      <p>
-        Our drinks are made by mixing dry or fresh ingredients with water.
-      </p>
-    </div>
-    <div class="facilities-col">
-      <h1>
-        Bakeries <i class="fa fa-cutlery" style="color: #AF7F4B"></i>
-      </h1>
-      <br />
-      <br />
-      <h3>Bakeries</h3>
-      <p>
-        Flour-based food baked in an oven such as bread, cookies, cakes, donuts, pastries, and pies.
-      </p>
-    </div>
+  <app-heading heading="Menu" description="Orchestrate your mornings to the tune of our coffee">
+  </app-heading>
+  <div class="container">
+    <app-product src="assets/espresso.png" name="Espresso"></app-product>
+    <app-product src="assets/cappuccino.png" name="Cappuccino"></app-product>
+    <app-product src="assets/latte-macchiato.png" name="Macciato"></app-product>
+    <app-product src="assets/mocha.png" name="Mocha"></app-product>
+    <app-product src="assets/latte.png" name="Latte"></app-product>
   </div>
+  <app-product-details src="assets/espresso.png" name="Espresso" price=36 boughtItemsCount=3>
+  </app-product-details>
 </section>

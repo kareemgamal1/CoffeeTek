@@ -1,0 +1,40 @@
+<div class="container d-flex align-items-center flex-column">
+  <div class="background">
+    <img src="{{src}}" alt="" width="30%">
+  </div>
+  <div class="d-flex select gap-5">
+    <div>
+      {{name}}
+      <br>
+      {{price}} EGP
+    </div>
+    <div>
+      {{boughtItemsCount}}
+      <button class="btn btn-danger">-</button>
+      <button class="btn btn-success">+</button>
+    </div>
+  </div>
+
+  <div class="size d-flex">
+    Size
+    <button class="small"></button>
+    <button class="medium"></button>
+    <button class="large"></button>
+  </div>
+  <div class="sugar d-flex">
+    Sugar
+    <button class="small"></button>
+    <button class="medium"></button>
+    <button class="large"></button>
+    <button class="extra"></button>
+  </div>
+  <div class="additions d-flex">
+    Additions
+    <button class="cream"></button>
+    <button class="ice"></button>
+  </div>
+  <div class="total">
+    Total: <span class="total-amount"></span> EGP.
+  </div>
+  <button class="add-to-cart">Add To Cart</button>
+</div>

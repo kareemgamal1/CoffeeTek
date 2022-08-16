@@ -11,6 +11,9 @@ import { FooterComponent } from './components/footer/footer.component';
 import { ProductsComponent } from './components/products/products.component';
 import { MainComponent } from './pages/main/main.component';
 import { AboutComponent } from './components/about/about.component';
+import { HeadingComponent } from './components/heading/heading.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductDetailsComponent } from './components/product-details/product-details.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +24,9 @@ import { AboutComponent } from './components/about/about.component';
     RegisterComponent,
     LoginComponent,
     AboutComponent,
+    HeadingComponent,
+    ProductComponent,
+    ProductDetailsComponent,
   ],
   imports: [
     CommonModule,

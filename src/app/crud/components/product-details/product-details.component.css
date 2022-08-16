@@ -1,0 +1,16 @@
+.background {
+  background-image: url("https://cdn.pixabay.com/photo/2021/07/01/23/42/wallpaper-6380532_1280.jpg");
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.small {
+}
+.medium {
+  width: 1%;
+}
+.large {
+  width: 1%;
+}
+button {
+}

@@ -1,0 +1,29 @@
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  height: fit-content;
+  margin-bottom: 5%;
+}
+
+.special-heading {
+  color: #ebe4e4;
+  font-size: 100px;
+  text-align: center;
+  font-weight: 800;
+  letter-spacing: -3px;
+  margin: 0;
+}
+.special-heading + p {
+  margin: -30px 0 0;
+  font-size: 20px;
+  text-align: center;
+  color: #797979;
+}
+@media (max-width: 768px) {
+  .special-heading {
+    font-size: 60px;
+  }
+  .special-heading + p {
+    margin-top: -20px;
+  }
+}
