@@ -5,9 +5,10 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CrudModule } from './crud/crud.module';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, NavbarComponent],
   imports: [BrowserModule, AppRoutingModule, RouterModule, CrudModule],
   providers: [],
   bootstrap: [AppComponent],

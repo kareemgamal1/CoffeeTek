@@ -14,7 +14,8 @@ import { AboutComponent } from './components/about/about.component';
 import { HeadingComponent } from './components/heading/heading.component';
 import { ProductComponent } from './components/product/product.component';
 import { ProductDetailsComponent } from './components/product-details/product-details.component';
-
+import { SubHeaderComponent } from './components/sub-header/sub-header.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -27,6 +28,8 @@ import { ProductDetailsComponent } from './components/product-details/product-de
     HeadingComponent,
     ProductComponent,
     ProductDetailsComponent,
+    SubHeaderComponent,
+    NavbarComponent
   ],
   imports: [
     CommonModule,

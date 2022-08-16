@@ -1,15 +1,7 @@
 <link rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 <div class="topnav">
-  <div class="li-topnav">
-    <a *ngFor="let item of MenuData" [routerLink]="item.command" [routerLinkActive]="'active'">{{
-      item.header }}</a>
-    <a href="#/crud/main" class="active">Home</a>
-    <a href="#/crud/main">Hot Drinks</a>
-    <a href="#/crud/main">Cold Drinks</a>
-    <a href="#/crud/main">Bakeries</a>
-    <a href="#/crud/main">About</a>
-  </div>
+  <app-navbar></app-navbar>
   <!-- Either show text-box/login/registration -->
   <div class="text-box" *ngIf="isHomeRoute()">
     <h1>Welcome to CoffeTek</h1>

@@ -1,6 +1,6 @@
 .form-box {
-  width: 380px;
-  height: 750px;
+  width: 20%;
+  height: 30rem;
   position: relative;
   margin: 6% auto;
   background: #fff;
@@ -9,8 +9,8 @@
   border-radius: 25px;
 }
 .form-boxx {
-  width: 380px;
-  height: 550px;
+  width: 20%;
+  height: 30rem;
   position: relative;
   margin: 6% auto;
   background: transparent;
@@ -69,9 +69,8 @@
   border-radius: 50px;
 }
 .input-group {
-  top: 180px;
   position: absolute;
-  width: 280px;
+  width: 75%;
   transition: 0.5s;
 }
 .inpit-feild {
@@ -91,11 +90,9 @@
   color: white;
 }
 .submit-btn {
-  width: 85%;
-  padding: 10px 30px;
+  width: 100%;
   cursor: pointer;
   display: block;
-  margin: auto;
   background: rgb(190, 154, 118);
   border: 0;
   outline: none;
