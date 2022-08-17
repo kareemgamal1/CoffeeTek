@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { CrudRoutingModule } from './crud-routing.module';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule,NgForm } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './components/header/header.component';
 import { LoginComponent } from './components/login/login.component';
@@ -17,6 +17,7 @@ import { SubHeaderComponent } from './components/sub-header/sub-header.component
 import { HotDrinksComponent } from './pages/hot-drinks/hot-drinks.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { HeadingComponent } from './components/heading/heading.component';
+
 @NgModule({
   declarations: [
     HeaderComponent,
@@ -26,11 +27,11 @@ import { HeadingComponent } from './components/heading/heading.component';
     MainComponent,
     RegisterComponent,
     LoginComponent,
+    HotDrinksComponent,
     AboutComponent,
     ProductComponent,
     ProductDetailsComponent,
     SubHeaderComponent,
-    HotDrinksComponent,
     NavbarComponent
   ],
   imports: [

@@ -80,11 +80,9 @@ nav img {
   float: none !important;
 }
 .visit-us-btn:hover {
-  border-radius: 0% !important;
   border: 1px solid #845d33;
   color: #845d33;
   background: white;
-  transition: 1s;
 }
 h1 {
   font-size: 38px;
