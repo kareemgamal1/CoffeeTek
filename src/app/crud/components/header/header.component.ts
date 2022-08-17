@@ -1,16 +1,17 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { Router } from '@angular/router';
+import { RoutingService } from '../../service/routing.service';
 import { MenuInfo } from './menu-info';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css'],
+  providers: [RoutingService],
 })
 export class HeaderComponent implements OnInit {
   @Input()
   MenuData: Array<MenuInfo> = [];
-  constructor(private router: Router) {}
+  constructor(private routing: RoutingService) {}
 
   ngOnInit(): void {}
 
@@ -22,13 +23,8 @@ export class HeaderComponent implements OnInit {
       x.className = 'topnav';
     }
   }
-  isHomeRoute() {
-    return this.router.url === '/crud/main';
-  }
-  isLoginRoute() {
-    return this.router.url === '/crud/login';
-  }
-  isRegisterRoute() {
-    return this.router.url === '/crud/register';
+
+  getRoute() {
+    return this.routing;
   }
 }

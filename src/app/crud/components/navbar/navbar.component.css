@@ -1,26 +1,27 @@
 .li-topnav {
-  margin-left: 30px;
+  position: absolute;
 }
 a {
-  float: left;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
+  font-size: 1.5rem;
+  padding: 1%;
   text-decoration: none;
-  font-size: 23px;
+  color: white;
+}
+a:hover:not(:first-child) {
+  transition: 0.3s;
+  border-bottom: 3px solid #845d334f;
+  transform: scale(105%);
+}
+a.active {
+  border-bottom: 3px solid #845d33;
 }
 
 .logo {
   margin: 0;
   padding: 0 !important;
-  width: 7%;
+  width: 10%;
 }
 .logo img {
-  width: 50%;
+  width: 100%;
   padding: 0;
-}
-.topnav a:hover {
-  transition: 1s;
-  color: white;
-  background-color: #845d33;
 }

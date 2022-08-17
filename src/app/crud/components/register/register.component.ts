@@ -1,32 +1,43 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { FormsModule, NgForm } from '@angular/forms';
+import { RoutingService } from '../../service/routing.service';
+
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css'],
+  providers: [RoutingService],
 })
 export class RegisterComponent implements OnInit {
   username: string = '';
   password: string = '';
   secondPassword: string = '';
   email: string = '';
-  constructor(private http:HttpClient) {
-    this.username="kareemgamaal";
-    this.password="kareeem";
-    this.email="123456";
+  constructor(private http: HttpClient, private routing: RoutingService) {
+    this.username = 'kareemgamaal';
+    this.password = 'kareeem';
+    this.email = '123456';
+    this.secondPassword = 'kareeem';
   }
 
   ngOnInit(): void {}
-  onFormSubmit() {
+  onRegister() {
     if (this.password === this.secondPassword) {
       let data = {
-        userName : this.username,
+        userName: this.username,
         email: this.email,
-        password : this.password,
+        password: this.password,
       };
-        this.http.post<any>('https://coffeeshopv.herokuapp.com/user/v1/add',data);
-        //then go to login page
+      this.http.post<any>(
+        'https://coffeeshopv.herokuapp.com/user/v1/add',
+        data
+      );
+      this.routing.toLogin();
+    } else {
+      console.log('error');
     }
+  }
+  getRoute() {
+    return this.routing;
   }
 }
