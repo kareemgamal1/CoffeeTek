@@ -1,40 +1,50 @@
 <div class="container d-flex align-items-center flex-column">
   <div class="background">
-    <img src="{{src}}" alt="" width="30%">
+    <img src="{{ src }}" alt="" width="30%" />
   </div>
+  <br />
   <div class="d-flex select gap-5">
     <div>
-      {{name}}
-      <br>
-      {{price}} EGP
+      {{ name }}: 
+      <span>{{ price }} EGP</span>
     </div>
-    <div>
-      {{boughtItemsCount}}
+    <div class="d-flex select gap-2">
+      {{ boughtItemsCount }} 
       <button class="btn btn-danger">-</button>
       <button class="btn btn-success">+</button>
     </div>
   </div>
-
-  <div class="size d-flex">
-    Size
-    <button class="small"></button>
-    <button class="medium"></button>
-    <button class="large"></button>
+  <br/>
+  <div class="size d-flex select gap-3">
+    Size:
+    <button class="small">
+      <img src="/assets/coffeecup.png" alt="jknj" />
+    </button>
+    <button class="medium">
+      <img src="/assets/coffeecup.png" alt="jknj" />
+    </button>
+    <button class="large">
+      <img src="/assets/coffeecup.png" alt="jknj" />
+    </button>
   </div>
-  <div class="sugar d-flex">
-    Sugar
-    <button class="small"></button>
-    <button class="medium"></button>
-    <button class="large"></button>
-    <button class="extra"></button>
+  <br/>
+  <div class="sugar d-flex select gap-2">
+    Sugar: 
+    <button class="small-s">
+      <img src="/assets/zerosugarcube.png" alt="jknj" />
+    </button>
+    <button class="medium-s">
+      <img src="/assets/onesugarcube.png" alt="jknj" />
+    </button>
+    <button class="large-s">
+      <img src="/assets/twosugarcubes.png" alt="jknj" />
+    </button>
+    <button class="extra-s">
+      <img src="/assets/threesugarcubes.png" alt="jknj" />
+    </button>
   </div>
-  <div class="additions d-flex">
-    Additions
-    <button class="cream"></button>
-    <button class="ice"></button>
-  </div>
-  <div class="total">
-    Total: <span class="total-amount"></span> EGP.
-  </div>
+  <br/>
+  <div class="total">Total: <span class="total-amount"></span> EGP.</div>
+  <br/>
   <button class="add-to-cart">Add To Cart</button>
 </div>

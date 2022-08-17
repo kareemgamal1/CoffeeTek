@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AboutComponent } from './components/about/about.component';
+import { HotDrinksComponent } from './pages/hot-drinks/hot-drinks.component';
 import { MainComponent } from './pages/main/main.component';
 
 const routes: Routes = [
@@ -10,7 +11,8 @@ const routes: Routes = [
   { path: 'crud/registration', component: MainComponent },
   { path: 'crud/login', component: MainComponent },
   { path: 'crud/register', component: MainComponent },
-  {path:'crud/about',component:AboutComponent}
+  {path:'crud/about',component:AboutComponent},
+  {path:'crud/hot-drinks',component:HotDrinksComponent}
 ];
 
 @NgModule({

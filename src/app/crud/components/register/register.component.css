@@ -1,6 +1,6 @@
 .form-box {
-  width: 380px;
-  height: 750px;
+  width: 50vw;
+  height: 74vh;
   position: relative;
   margin: 6% auto;
   background: #fff;
@@ -9,10 +9,10 @@
   border-radius: 25px;
 }
 .form-boxx {
-  width: 380px;
-  height: 550px;
+  width: 25vw;
+  height: 78vh;
   position: relative;
-  margin: 6% auto;
+  margin: 5% auto;
   background: transparent;
   padding: 5px;
   overflow: hidden;
@@ -89,6 +89,9 @@
 }
 .inpit-feild::placeholder {
   color: white;
+}
+.submit-holder {
+  width: 100%;
 }
 .submit-btn {
   width: 85%;

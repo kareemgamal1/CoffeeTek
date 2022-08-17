@@ -8,6 +8,8 @@ import { MenuInfo } from './menu-info';
   styleUrls: ['./header.component.css'],
 })
 export class HeaderComponent implements OnInit {
+  @Input()
+  MenuData: Array<MenuInfo> = [];
   constructor(private router: Router) {}
 
   ngOnInit(): void {}

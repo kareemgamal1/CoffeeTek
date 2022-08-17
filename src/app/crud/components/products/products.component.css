@@ -1,2 +1,29 @@
-.row {
+.facilities{
+    width: 86%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 50px;
 }
+.row {
+
+    display: flex;
+    justify-content: space-between;
+  }
+  .menu-col1 {
+    flex: 2;
+    padding: 30px 2px;
+  }
+  .menu-col {
+    flex: 1;
+    padding: 30px 2px;
+  }
+  .menu-col img {
+    width: 100%;
+  }
+  .menu-col h1 {
+    padding-top: 0;
+  }
+  .menu-col p {
+    
+    padding: 15px 0 25px;
+  }
