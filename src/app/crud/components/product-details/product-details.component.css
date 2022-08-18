@@ -1,99 +1,90 @@
+* {
+  font-weight: bold;
+}
+.container {
+  border: 1px solid rgba(0, 0, 0, 0.37);
+  padding: 0 !important;
+}
 .background {
-  background-image: url("https://cdn.pixabay.com/photo/2021/07/01/23/42/wallpaper-6380532_1280.jpg");
+  background-image: url("https://cdn.pixabay.com/photo/2020/07/18/16/29/coffee-5417663_1280.png");
   background-size: cover;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
 .small {
-  width: 5%;
   border: none;
   background-color: transparent;
-  margin-left:15%;
 }
 .small img {
   width: 30px;
   height: 50px;
 }
 .medium {
-  width: 5%;
   border: none;
   background-color: transparent;
-  margin-left:15%;
 }
 .medium img {
   width: 50px;
   height: 70px;
 }
 .large {
-  width: 5%;
   border: none;
   background-color: transparent;
-  margin-left:15%;
 }
 .large img {
   width: 70px;
   height: 90px;
 }
 .small-s {
-  width: 5%;
   border: none;
   background-color: transparent;
-  margin-left:15%;
 }
 .small-s img {
   width: 30px;
   height: 50px;
 }
 .medium-s {
-  width: 5%;
   border: none;
   background-color: transparent;
-  margin-left:15%;
 }
 .medium-s img {
   width: 30px;
   height: 50px;
 }
 .large-s {
-  width: 5%;
   border: none;
   background-color: transparent;
-  margin-left:15%;
 }
 .large-s img {
   width: 30px;
   height: 50px;
 }
 .extra-s {
-  width: 5%;
   border: none;
   background-color: transparent;
-  margin-left:15%;
 }
 .extra-s img {
   width: 30px;
   height: 50px;
 }
 
-.add-to-cart{
+.add-to-cart {
   display: inline-block !important;
-    text-decoration: none;
-    color: white;
-    border: 1px solid #845d33;
-    background: #845d33;
-    padding: 12px 34px;
-    font-size: 13px;
-    position: relative;
-    cursor: pointer;
-    float: none !important;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #845d33;
+  background: #845d33;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+  float: none !important;
 }
-.add-to-cart:hover{
+.add-to-cart:hover {
   border-radius: 0% !important;
   border: 1px solid #845d33;
   color: #845d33;
   background: white;
   transition: 1s;
-}
-.btn{
-  justify-content: space-between;
 }
