@@ -15,6 +15,7 @@
       [(ngModel)]="password" />
     <div class="submit-holder">
       <button class="submit-btn" (click)="onLogin()">Login</button>
+      <div *ngIf="!isLogged" class="error">Please check your e-mail and password!</div>
     </div>
   </div>
 </div>

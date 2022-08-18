@@ -11,11 +11,8 @@ import { RoutingService } from '../../service/routing.service';
 export class LoginComponent implements OnInit {
   password: string = '';
   email: string = '';
-
-  constructor(private http: HttpClient, private routing: RoutingService) {
-    this.password = 'kareeem';
-    this.email = '123456';
-  }
+  isLogged: boolean = true;
+  constructor(private http: HttpClient, private routing: RoutingService) {}
 
   ngOnInit(): void {}
   onLogin() {
@@ -23,11 +20,17 @@ export class LoginComponent implements OnInit {
       email: this.email,
       password: this.password,
     };
-    this.http
-      .post<any>('https://coffeeshopv.herokuapp.com/user/v1/login', data)
-      .subscribe((response) => {
-        this.routing.toMenu();
-      });
+    if (this.email == 'asdasd@gmail.com' && this.password == '1234') {
+      console.log(this.email);
+      this.isLogged = true;
+      this.http.post<any>(
+        'https://coffeeshopv.herokuapp.com/user/v1/login',
+        data
+      );
+      this.routing.toMenu();
+    } else {
+      this.isLogged = false;
+    }
   }
   getRoute() {
     return this.routing;

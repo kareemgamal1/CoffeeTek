@@ -10,7 +10,7 @@ const routes: Routes = [
   { path: '', redirectTo: 'crud/main', pathMatch: 'full' },
   { path: 'crud', redirectTo: 'crud/main', pathMatch: 'full' },
   { path: 'crud/main', component: MainComponent },
-  { path: 'crud/registration', component: MainComponent },
+  { path: 'crud/register', component: MainComponent },
   { path: 'crud/login', component: MainComponent },
   { path: 'crud/about', component: AboutComponent },
   { path: 'crud/cart-p', component: CartPComponent },

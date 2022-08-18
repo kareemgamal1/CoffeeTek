@@ -15,4 +15,7 @@ export class NavbarComponent implements OnInit {
   getRoute() {
     return this.routing;
   }
+  deleteProducts() {
+    localStorage.removeItem('products');
+  }
 }

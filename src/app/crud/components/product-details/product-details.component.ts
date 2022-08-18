@@ -1,14 +1,19 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
+import { CartService } from '../../service/cart.service';
 
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css'],
+  providers: [CartService],
 })
 export class ProductDetailsComponent implements OnInit {
   @Input() src: string = '';
   @Input() name: string = '';
   @Input() price!: string;
+  @Output() childName = new EventEmitter<MouseEvent>();
+
+  source!: string;
   noPrice!: number;
   noOfboughtItemsCount: number = 1;
   boughtItemsCount: string = '1';
@@ -18,13 +23,32 @@ export class ProductDetailsComponent implements OnInit {
   sugar!: number;
   sizeSelected: number = 1;
   sugarSelected: number = 1;
-  constructor() {}
+  constructor(private cart: CartService) {}
+
+  public handleClick(event: MouseEvent) {
+    this.childName.emit(event);
+  }
 
   ngOnInit(): void {
+    this.source = this.src;
     this.noPrice = parseInt(this.price);
     this.total = String(this.noPrice);
   }
-
+  addToCart() {
+    const objectToBeReturned: {
+      src: string;
+      name: string;
+      price: number;
+      quantity: number;
+    } = {
+      src: this.source,
+      name: this.name,
+      price: this.noPrice,
+      quantity: this.noOfboughtItemsCount,
+    };
+    console.log(this.cart.products);
+    this.cart.addToCart(objectToBeReturned);
+  }
   onAdd() {
     this.noOfboughtItemsCount++;
     this.boughtItemsCount = String(this.noOfboughtItemsCount);

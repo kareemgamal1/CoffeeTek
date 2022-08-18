@@ -13,12 +13,7 @@ export class RegisterComponent implements OnInit {
   password: string = '';
   secondPassword: string = '';
   email: string = '';
-  constructor(private http: HttpClient, private routing: RoutingService) {
-    this.username = 'kareemgamaal';
-    this.password = 'kareeem';
-    this.email = '123456';
-    this.secondPassword = 'kareeem';
-  }
+  constructor(private http: HttpClient, private routing: RoutingService) {}
 
   ngOnInit(): void {}
   onRegister() {

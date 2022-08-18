@@ -1,79 +1,24 @@
-<link rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="shopping-cart">
-  <!-- Title -->
   <div class="title">Shopping Cart</div>
-
-  <!-- Product #1 -->
-  <div class="item">
+  <div class="item" *ngFor="let item of getCart()">
     <div class="image">
-      <img src="/assets/item-1.jpg" alt="" style="width: 100%; height: 100%" />
+      <img src="{{item.src}}" alt="" style="width: 100%; height: 100%" />
     </div>
-
     <div class="description">
-      <span>Espresso</span>
-      <span>Single shot</span>
-      <span>Extra sugar</span>
+      <span>{{item.name}}</span>
     </div>
 
     <div class="quantity">
-      <button class="plus-btn" type="button" name="button">+</button>
-      <input type="text" name="name" value="1" />
+      <button class="plus-btn" type="button" (click)="onDec()" name="button">+</button>
+      <span>{{item.quantity}}</span>
       <button class="minus-btn" type="button" name="button">-</button>
     </div>
 
-    <div class="total-price">$549</div>
+    <div class="total-price">${{item.quantity*item.price}}</div>
     <div class="buttons">
       <span class="delete-btn"> <i class="fa fa-trash"></i></span>
     </div>
   </div>
 
-  <!-- Product #2 -->
-  <div class="item">
-    <div class="image">
-      <img src="/assets/item-1.jpg" alt="" style="width: 100%; height: 100%" />
-    </div>
-
-    <div class="description">
-      <span>Maison Margiela</span>
-      <span>Future Sneakers</span>
-      <span>White</span>
-    </div>
-
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">+</button>
-      <input type="text" name="name" value="1" />
-      <button class="minus-btn" type="button" name="button">-</button>
-    </div>
-
-    <div class="total-price">$870</div>
-    <div class="buttons">
-      <span class="delete-btn"> <i class="fa fa-trash"></i></span>
-    </div>
-  </div>
-
-  <!-- Product #3 -->
-  <div class="item">
-    <div class="image">
-      <img src="/assets/item-1.jpg" alt="" style="width: 100%; height: 100%" />
-    </div>
-
-    <div class="description">
-      <span>Our Legacy</span>
-      <span>Brushed Scarf</span>
-      <span>Brown</span>
-    </div>
-
-    <div class="quantity">
-      <button class="plus-btn" type="button" name="button">+</button>
-      <input type="text" name="name" value="1" />
-      <button class="minus-btn" type="button" name="button">-</button>
-    </div>
-
-    <div class="total-price">$349</div>
-    <div class="buttons">
-      <span class="delete-btn"> <i class="fa fa-trash"></i></span>
-    </div>
-  </div>
   <div class="totale">Total price: </div>
 </div>

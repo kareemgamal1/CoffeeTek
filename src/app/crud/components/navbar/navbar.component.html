@@ -10,12 +10,8 @@
           src="assets/user.png" alt=""></a>
       <a href="#/crud/cart-p" [ngClass]="{'active': getRoute().isCartRoute()}"><img
           src="assets/cart.png" alt=""></a>
-      <a (click)="getRoute().toLogin()" href="#/crud/cart-p"><img src="assets/logout.png"
-          alt=""></a>
+      <a (click)="getRoute().toLogin()" (click)="deleteProducts()" href="#/crud/cart-p"><img
+          src="assets/logout.png" alt=""></a>
     </div>
-
-    <!-- <a href="#/crud/user" [ngClass]="{'active': getRoute().isUserRoute()}">User</a> -->
-    <!-- <a href="#/crud/login" (click)="logOut()" }">Log Out</a> -->
-
   </div>
 </div>

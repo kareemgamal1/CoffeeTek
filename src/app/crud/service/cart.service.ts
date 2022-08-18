@@ -4,9 +4,17 @@ import { Injectable } from '@angular/core';
   providedIn: 'root',
 })
 export class CartService {
-  products!: [{ src: string; name: string; price: number }];
-  addToCart(){
-    
+  //read it from backend
+  products: { src: string; name: string; price: number; quantity: number }[] =
+    [];
+  addToCart(objectToBeReturned: {
+    src: string;
+    name: string;
+    price: number;
+    quantity: number;
+  }) {
+    this.products.push(objectToBeReturned);
+    localStorage.setItem('products', JSON.stringify(this.products));
   }
   constructor() {}
 }
