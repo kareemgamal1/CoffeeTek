@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { CartService } from '../../service/cart.service';
+import { RoutingService } from '../../service/routing.service';
 
 @Component({
   selector: 'app-product-details',
   templateUrl: './product-details.component.html',
   styleUrls: ['./product-details.component.css'],
-  providers: [CartService],
+  providers: [CartService, RoutingService],
 })
 export class ProductDetailsComponent implements OnInit {
   @Input() src: string = '';
@@ -23,7 +24,7 @@ export class ProductDetailsComponent implements OnInit {
   sugar!: number;
   sizeSelected: number = 1;
   sugarSelected: number = 1;
-  constructor(private cart: CartService) {}
+  constructor(private cart: CartService, private routing: RoutingService) {}
 
   public handleClick(event: MouseEvent) {
     this.childName.emit(event);
@@ -47,8 +48,15 @@ export class ProductDetailsComponent implements OnInit {
       quantity: this.noOfboughtItemsCount,
     };
     console.log(this.cart.products);
-    this.cart.addToCart(objectToBeReturned);
+    let stat = localStorage.getItem('loggedIn');
+    if (stat == 'true') {
+      this.cart.addToCart(objectToBeReturned);
+    } else {
+      alert('Please login first!');
+      this.routing.toLogin();
+    }
   }
+
   onAdd() {
     this.noOfboughtItemsCount++;
     this.boughtItemsCount = String(this.noOfboughtItemsCount);

@@ -1,18 +1,23 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { RoutingService } from '../../service/routing.service';
+import { UserService } from '../../service/user.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers: [RoutingService],
+  providers: [RoutingService, UserService],
 })
 export class LoginComponent implements OnInit {
   password: string = '';
   email: string = '';
   isLogged: boolean = true;
-  constructor(private http: HttpClient, private routing: RoutingService) {}
+  constructor(
+    private http: HttpClient,
+    private routing: RoutingService,
+    private user: UserService
+  ) {}
 
   ngOnInit(): void {}
   onLogin() {
@@ -28,6 +33,7 @@ export class LoginComponent implements OnInit {
         data
       );
       this.routing.toMenu();
+      this.user.loggedIn();
     } else {
       this.isLogged = false;
     }

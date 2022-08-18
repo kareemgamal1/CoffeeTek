@@ -13,8 +13,5 @@ export class CartComponent implements OnInit {
     console.log(JSON.parse(localStorage.getItem('products') || '[]'));
     return JSON.parse(localStorage.getItem('products') || '[]');
   }
-  onDec() {
-    this.cart.products;
-  }
   ngOnInit(): void {}
 }
