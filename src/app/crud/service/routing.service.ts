@@ -21,6 +21,12 @@ export class RoutingService {
   isAboutRoute() {
     return this.router.url === '/crud/about';
   }
+  isUserRoute() {
+    return this.router.url === '/crud/user';
+  }
+  isCartRoute() {
+    return this.router.url === '/crud/cart-p';
+  }
   toLogin() {
     this.location.replaceState('/crud/login');
     window.location.reload();

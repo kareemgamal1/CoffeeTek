@@ -1,7 +1,21 @@
-<div class="li-topnav d-flex align-items-center gap-3">
-  <a href="#/crud/main" class="logo"><img src="/assets/logo.png" alt="" /></a>
-  <a href="#/crud/main"
-    [ngClass]="{'active': getRoute().isHomeRoute()||getRoute().isLoginRoute()|| getRoute().isRegisterRoute()}">Home</a>
-  <a href="#/crud/menu" [ngClass]="{'active': getRoute().isMenuRoute()}">Menu</a>
-  <a href="#/crud/about" [ngClass]="{'active': getRoute().isAboutRoute()}">About</a>
+<div class="d-flex">
+  <div class="li-topnav d-flex align-items-center gap-3 w-100">
+    <a href="#/crud/main" class="logo"><img src="/assets/logo.png" alt="" /></a>
+    <a href="#/crud/main"
+      [ngClass]="{'active': getRoute().isHomeRoute()||getRoute().isLoginRoute()|| getRoute().isRegisterRoute()}">Home</a>
+    <a id="menu" href="#/crud/menu" [ngClass]="{'active': getRoute().isMenuRoute()}">Menu</a>
+    <a id="about" href="#/crud/about" [ngClass]="{'active': getRoute().isAboutRoute()}">About</a>
+    <div class="user d-flex w-100 justify-content-end">
+      <a href="#/crud/user" [ngClass]="{'active': getRoute().isUserRoute()}"><img
+          src="assets/user.png" alt=""></a>
+      <a href="#/crud/cart-p" [ngClass]="{'active': getRoute().isCartRoute()}"><img
+          src="assets/cart.png" alt=""></a>
+      <a (click)="getRoute().toLogin()" href="#/crud/cart-p"><img src="assets/logout.png"
+          alt=""></a>
+    </div>
+
+    <!-- <a href="#/crud/user" [ngClass]="{'active': getRoute().isUserRoute()}">User</a> -->
+    <!-- <a href="#/crud/login" (click)="logOut()" }">Log Out</a> -->
+
+  </div>
 </div>
