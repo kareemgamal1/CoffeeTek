@@ -21,6 +21,7 @@ import { UserComponent } from './Pages/user/user.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { UserHeaderComponent } from './Components/user-header/user-header.component';
 
 @NgModule({
   declarations: [
@@ -40,6 +41,7 @@ import { AppComponent } from './app.component';
     NavbarComponent,
     CartPComponent,
     UserComponent,
+    UserHeaderComponent,
   ],
   imports: [
     CommonModule,
