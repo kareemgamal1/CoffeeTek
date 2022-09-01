@@ -1,0 +1,41 @@
+.li-topnav {
+  position: absolute;
+}
+.user img {
+  height: 5vh;
+}
+a,
+.user a {
+  font-size: 1.5rem;
+  padding: 1%;
+  padding-top: 0;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+a:hover:not(:first-child:not(:last-child)) {
+  transition: 0.3s;
+  border-bottom: 3px solid #845d334f;
+  transform: scale(105%);
+}
+.user a:hover {
+  transition: 0.3s;
+  border-bottom: 3px solid #845d334f;
+  transform: scale(105%);
+}
+.user a:hover:last-child {
+  transform: scale(100%);
+}
+a.active {
+  border-bottom: 3px solid #845d33;
+}
+.logo {
+  margin: 0;
+  padding: 0 !important;
+  width: 7%;
+}
+.logo img {
+  width: 100%;
+  padding: 0;
+}

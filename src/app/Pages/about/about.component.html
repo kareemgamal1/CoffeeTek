@@ -1,0 +1,22 @@
+<app-sub-header heading="About Us"
+  description="I judge a restaurant by the bread and by the coffee."></app-sub-header>
+<div class="row justify-content-center align-items-center">
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>We Believe in the Pursuit of Doing Good</h1>
+        <p>Our story begins in 1971 along the cobblestone streets of Seattle’s<br />
+          historic Pike Place Market. It was here where Coffe Tek opened its<br />
+          first store, offering fresh-roasted coffee beans, tea and spices<br />
+          from around the world for our customers to take home. Our name <br />
+          was inspired by the classic tale, “Moby-Dick”</p>
+        <a [routerLink]="['../home/register']" routerLinkActive="router-link-active"
+          class="visit-us-btn red-btn">Explore now</a>
+      </div>
+      <div class="about-col">
+        <img src="/assets/about-us.jpg" alt='jknj' />
+      </div>
+    </div>
+  </section>
+  <app-footer></app-footer>
+</div>

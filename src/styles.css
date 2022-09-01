@@ -1,5 +1,9 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin-right: calc(
+    -1 * (100vw - 100%)
+  ); /*Prevent repositioning when there's a vertical scrollbar*/
 }
 
 * {

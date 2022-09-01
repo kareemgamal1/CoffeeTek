@@ -1,0 +1,19 @@
+<div class="form-box d-flex flex-column align-items-center gap-5">
+  <div class="button-box d-flex justify-content-center">
+    <a [routerLink]="['../login']" routerLinkActive="active">
+      <button type="button" class="toggle-btn">Login</button>
+    </a>
+    <a [routerLink]=" ['../register']" routerLinkActive="active">
+      <button type="button" class="toggle-btn">Register</button>
+    </a>
+  </div>
+  <div id="login" class="input-group d-flex flex-column gap-3 w-75">
+    <input type="email" class="input-field" placeholder="Email" required [(ngModel)]="email" />
+    <input type="password" class="input-field" placeholder=" Password" required
+      [(ngModel)]="password" />
+    <div class="submit-holder">
+      <button class="submit-btn" (click)="onLogin()">Login</button>
+      <div *ngIf="!isLogged" class="error">Please check your e-mail and password!</div>
+    </div>
+  </div>
+</div>

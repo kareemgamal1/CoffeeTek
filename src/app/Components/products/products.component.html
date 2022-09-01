@@ -1,0 +1,23 @@
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<section class="facilities">
+  <div class="row">
+    <div class="menu-col1">
+      <app-product (click)="changeProduct($event)" src="assets/espresso.png" name="Espresso">
+      </app-product>
+      <app-product (click)="changeProduct($event)" src="assets/cappuccino.png" name="Cappuccino">
+      </app-product>
+      <app-product (click)="changeProduct($event)" src="assets/latte-macchiato.png"
+        name="Macchiato"></app-product>
+      <app-product (click)="changeProduct($event)" src="assets/mocha.png" name="Mocha">
+      </app-product>
+      <app-product (click)="changeProduct($event)" src="assets/latte.png" name="Latte">
+      </app-product>
+    </div>
+    <div class="menu-col">
+      <app-product-details src={{currentProduct.src}} name={{currentProduct.name}}
+        price={{currentProduct.price}}>
+      </app-product-details>
+    </div>
+  </div>
+</section>

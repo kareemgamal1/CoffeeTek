@@ -1,0 +1,44 @@
+.footer {
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+}
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 26px;
+}
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.fa-heart-o {
+  color: #f44336;
+}
+.footer-1 {
+  flex: auto;
+  justify-content: space-between;
+  display: inline;
+}
+.row {
+  margin-top: 2%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-col {
+  flex-basis: 31%;
+}
+.footer-col img {
+  width: 100%;
+}
+.footer-col h1 {
+  padding-top: 0;
+}
+.footer-col p {
+  font-size: 1.2em;
+  font-weight: 500;
+  margin: 0 !important;
+}
