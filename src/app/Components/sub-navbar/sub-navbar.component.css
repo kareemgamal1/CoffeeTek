@@ -1,6 +1,6 @@
 .sub-header {
   position: relative;
-  height: 50vh;
+  height: 40vh;
   width: 100%;
   overflow: hidden;
 }
@@ -17,11 +17,6 @@
 }
 .sub-header h1 {
   margin-top: 50px;
-}
-nav {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
 }
 nav img {
   width: 200px;

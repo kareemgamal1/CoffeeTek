@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SubHeaderComponent } from './sub-header.component';
+import { ButtonsHolderComponent } from './buttons-holder.component';
 
-describe('SubHeaderComponent', () => {
-  let component: SubHeaderComponent;
-  let fixture: ComponentFixture<SubHeaderComponent>;
+describe('ButtonsHolderComponent', () => {
+  let component: ButtonsHolderComponent;
+  let fixture: ComponentFixture<ButtonsHolderComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SubHeaderComponent ]
+      declarations: [ ButtonsHolderComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SubHeaderComponent);
+    fixture = TestBed.createComponent(ButtonsHolderComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

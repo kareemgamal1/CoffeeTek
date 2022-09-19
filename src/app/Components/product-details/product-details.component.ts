@@ -32,9 +32,10 @@ export class ProductDetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.source = this.src;
-    this.noPrice = parseInt(this.price);
+    this.noPrice = +this.price;
     this.total = String(this.noPrice);
   }
+
   addToCart() {
     const objectToBeReturned: {
       src: string;
@@ -75,6 +76,7 @@ export class ProductDetailsComponent implements OnInit {
     this.noTotal = parseInt(this.price) * this.noOfboughtItemsCount;
     this.total = String(this.noTotal);
   }
+
   selectSize(size: number) {
     this.sizeSelected = size;
     if (size != 1) {
@@ -84,6 +86,7 @@ export class ProductDetailsComponent implements OnInit {
     }
     this.calculateTotal();
   }
+
   selectSugar(sugar: number) {
     this.sugarSelected = sugar;
   }

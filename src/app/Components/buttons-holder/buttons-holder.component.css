@@ -1,0 +1,23 @@
+.button-box {
+  border-radius: 30px;
+}
+
+.button-box a {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  border-radius: 30px;
+  width: 50%;
+}
+
+.toggle-btn {
+  padding: 10px 30px;
+  background: transparent;
+  border: 0;
+  color: white;
+}
+
+.active {
+  background-color: rgb(190, 154, 118);
+  transition: 0.5s;
+}

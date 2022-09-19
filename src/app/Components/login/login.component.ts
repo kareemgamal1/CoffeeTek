@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { RoutingService } from '../../Services/routing.service';
 import { UserService } from '../../Services/user.service';
 
@@ -10,35 +11,23 @@ import { UserService } from '../../Services/user.service';
   providers: [RoutingService, UserService],
 })
 export class LoginComponent implements OnInit {
-  password: string = '';
-  email: string = '';
   isLogged: boolean = true;
-  constructor(
-    private http: HttpClient,
-    private routing: RoutingService,
-    private user: UserService
-  ) {}
+  loginForm: FormGroup;
 
-  ngOnInit(): void {}
-  onLogin() {
-    let data = {
-      email: this.email,
-      password: this.password,
-    };
-    if (this.email == 'asdasd@gmail.com' && this.password == '1234') {
-      console.log(this.email);
-      this.isLogged = true;
-      this.http.post<any>(
-        'https://coffeeshopv.herokuapp.com/user/v1/login',
-        data
-      );
-      this.routing.toMenu();
-      this.user.loggedIn();
-    } else {
-      this.isLogged = false;
-    }
+  constructor(private routing: RoutingService, private user: UserService) {}
+
+  ngOnInit(): void {
+    this.loginForm = new FormGroup({
+      email: new FormControl('kareemgamaal@gmail.com', [
+        Validators.email,
+        Validators.required,
+      ]),
+      password: new FormControl('asdasdasd', [Validators.required]),
+    });
   }
-  getRoute() {
-    return this.routing;
+
+  onLogin() {
+    console.log(this.loginForm.get('email').value);
+    this.routing.toMenu();
   }
 }

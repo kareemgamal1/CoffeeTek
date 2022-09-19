@@ -1,6 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
+import { filter } from 'rxjs';
 import { RoutingService } from '../../Services/routing.service';
-import { MenuInfo } from './menu-info';
 
 @Component({
   selector: 'app-home',
@@ -10,21 +11,26 @@ import { MenuInfo } from './menu-info';
 })
 export class HomeComponent implements OnInit {
   @Input()
-  MenuData: Array<MenuInfo> = [];
-  constructor(private routing: RoutingService) {}
+  inWelcome: boolean = false;
+  constructor(private router: Router) {}
 
-  ngOnInit(): void {}
-
-  HandleMenuShowHide(e: MouseEvent, x: HTMLDivElement) {
-    e.preventDefault();
-    if (x.className === 'topnav') {
-      x.className += ' responsive';
-    } else {
-      x.className = 'topnav';
-    }
-  }
-
-  getRoute() {
-    return this.routing;
+  ngOnInit(): void {
+    this.router.url == '/home'
+      ? (this.inWelcome = true)
+      : (this.inWelcome = false);
+    this.router.events
+      .pipe(
+        filter(
+          (event): event is NavigationEnd => event instanceof NavigationEnd
+        )
+      )
+      .subscribe((event: NavigationEnd) => {
+        if (event.url == '/home') {
+          this.inWelcome = true;
+        } else {
+          this.inWelcome = false;
+        }
+      });
+    //I want to subscribe to the current URL, relative to home, whenever it changes I change the value of inMain, so that i can hide buttons holder
   }
 }

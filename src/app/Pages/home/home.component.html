@@ -1,4 +1,6 @@
-<app-navbar></app-navbar>
-<div class="landing d-flex flex-column justify-content-center align-items-center">
+<div class="landing d-flex flex-column align-items-center">
+  <app-navbar></app-navbar>
+  <app-buttons-holder *ngIf="!inWelcome">
+  </app-buttons-holder>
   <router-outlet></router-outlet>
 </div>

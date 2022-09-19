@@ -1,10 +1,12 @@
 * {
   font-weight: bold;
 }
+
 .container {
   border: 1px solid rgba(0, 0, 0, 0.37);
   padding: 0 !important;
 }
+
 .background {
   background-image: url("https://cdn.pixabay.com/photo/2020/07/18/16/29/coffee-5417663_1280.png");
   background-size: cover;
@@ -12,58 +14,72 @@
   display: flex;
   justify-content: center;
 }
+
 .small {
   border: none;
   background-color: transparent;
 }
+
 .small img {
   width: 30px;
   height: 50px;
 }
+
 .medium {
   border: none;
   background-color: transparent;
 }
+
 .medium img {
   width: 50px;
   height: 70px;
 }
+
 .large {
   border: none;
   background-color: transparent;
 }
+
 .large img {
   width: 70px;
   height: 90px;
 }
+
 .small-s {
   border: none;
   background-color: transparent;
 }
+
 .small-s img {
   width: 30px;
   height: 50px;
 }
+
 .medium-s {
   border: none;
   background-color: transparent;
 }
+
 .medium-s img {
   width: 30px;
   height: 50px;
 }
+
 .large-s {
   border: none;
   background-color: transparent;
 }
+
 .large-s img {
   width: 30px;
   height: 50px;
 }
+
 .extra-s {
   border: none;
   background-color: transparent;
 }
+
 .extra-s img {
   width: 30px;
   height: 50px;
@@ -81,6 +97,7 @@
   cursor: pointer;
   float: none !important;
 }
+
 .add-to-cart:hover {
   border-radius: 0% !important;
   border: 1px solid #845d33;

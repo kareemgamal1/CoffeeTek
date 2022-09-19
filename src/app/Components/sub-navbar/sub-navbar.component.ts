@@ -1,11 +1,11 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-user-header',
-  templateUrl: './user-header.component.html',
-  styleUrls: ['./user-header.component.css'],
+  selector: 'app-sub-navbar',
+  templateUrl: './sub-navbar.component.html',
+  styleUrls: ['./sub-navbar.component.css'],
 })
-export class UserHeaderComponent implements OnInit {
+export class SubNavbarComponent implements OnInit {
   @Input() title!: string;
   @Input() heading!: string;
   @Input() description!: string;

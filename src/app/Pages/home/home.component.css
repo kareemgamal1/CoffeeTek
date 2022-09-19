@@ -21,7 +21,6 @@
   border: 1px solid black;
 }
 .text-box {
-  width: 90%;
   color: white;
   text-align: center;
 }
@@ -41,4 +40,7 @@
 
 .landing a.active {
   border-bottom: 1px solid #845d33;
+}
+app-navbar {
+  margin-bottom: 10%;
 }
