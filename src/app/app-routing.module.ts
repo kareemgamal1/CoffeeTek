@@ -8,6 +8,8 @@ import { HomeComponent } from './Pages/home/home.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { LoginComponent } from './Components/login/login.component';
 import { MainComponent } from './Components/main/main.component';
+import { AuthGuard } from './auth-guard.service';
+import { BrowserModule } from '@angular/platform-browser';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -21,10 +23,14 @@ const routes: Routes = [
       { path: 'login', component: LoginComponent },
     ],
   },
-  { path: 'about', component: AboutComponent },
-  { path: 'cart-p', component: CartPComponent },
+  {
+    path: 'about',
+    component: AboutComponent,
+    data: { animation: 'togglePage' },
+  },
+  { path: 'cart-p', component: CartPComponent, canActivate: [AuthGuard] },
   { path: 'menu', component: HotDrinksComponent },
-  { path: 'user', component: UserComponent },
+  { path: 'user', component: UserComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({

@@ -10,8 +10,8 @@ import { FooterComponent } from './Components/footer/footer.component';
 import { ProductsComponent } from './Components/products/products.component';
 import { MainComponent } from './Components/main/main.component';
 import { AboutComponent } from './Pages/about/about.component';
-import { ProductComponent } from './Components/product/product.component';
-import { ProductDetailsComponent } from './Components/product-details/product-details.component';
+import { ProductComponent } from './Components/products/product/product.component';
+import { ProductDetailsComponent } from './Components/products/product-details/product-details.component';
 import { SubNavbarComponent } from './Components/sub-navbar/sub-navbar.component';
 import { HotDrinksComponent } from './Pages/menu/menu.component';
 import { NavbarComponent } from './Components/navbar/navbar.component';
@@ -24,6 +24,9 @@ import { AppComponent } from './app.component';
 import { UserNavbarComponent } from './Components/user-navbar/user-navbar.component';
 import { ButtonsHolderComponent } from './Components/buttons-holder/buttons-holder.component';
 import { ProductsService } from './Services/products.service';
+import { DefaultComponent } from './Components/products/product-details/default/default.component';
+import { CartService } from './Services/cart.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -45,8 +48,11 @@ import { ProductsService } from './Services/products.service';
     UserComponent,
     UserNavbarComponent,
     ButtonsHolderComponent,
+    DefaultComponent,
   ],
   imports: [
+    BrowserModule,
+    BrowserAnimationsModule,
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
@@ -54,8 +60,9 @@ import { ProductsService } from './Services/products.service';
     AppRoutingModule,
     BrowserModule,
     RouterModule,
+    BrowserModule,
   ],
-  providers: [ProductsService],
+  providers: [ProductsService, CartService],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

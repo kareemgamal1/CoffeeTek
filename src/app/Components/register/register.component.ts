@@ -7,7 +7,6 @@ import { RoutingService } from '../../Services/routing.service';
   selector: 'app-register',
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css'],
-  providers: [RoutingService],
 })
 export class RegisterComponent implements OnInit {
   registerForm: FormGroup;

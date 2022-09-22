@@ -1,20 +1,21 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
-import { RoutingService } from '../../Services/routing.service';
-import { UserService } from '../../Services/user.service';
+import { AuthService } from 'src/app/Services/auth.service';
+import { RoutingService } from 'src/app/Services/routing.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.css'],
-  providers: [RoutingService, UserService],
 })
 export class LoginComponent implements OnInit {
   isLogged: boolean = true;
   loginForm: FormGroup;
 
-  constructor(private routing: RoutingService, private user: UserService) {}
+  constructor(
+    private routing: RoutingService,
+    private AuthService: AuthService
+  ) {}
 
   ngOnInit(): void {
     this.loginForm = new FormGroup({
@@ -28,6 +29,7 @@ export class LoginComponent implements OnInit {
 
   onLogin() {
     console.log(this.loginForm.get('email').value);
+    this.AuthService.login();
     this.routing.toMenu();
   }
 }

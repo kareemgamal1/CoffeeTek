@@ -1,15 +1,11 @@
-<div class="row justify-content-center mt-3">
-  <div class="menu col-lg-6 col-s-12">
-    <app-product *ngFor="let product of products" src="{{product.src}}" name="{{product.name}}">
+<div class="row justify-content-center gap-3 mt-3">
+  <div class="menu col-lg-5 col-s-7">
+    <app-product *ngFor="let product of products" [currentProduct]="product">
     </app-product>
   </div>
-  <div class="product col-lg-3 col-s-12">
-    <app-product-details src={{currentProduct.src}} name={{currentProduct.name}}
-      price={{currentProduct.price}}>
+  <div class="product col-lg-3 col-s-7 d-flex justify-content-center">
+    <app-product-details *ngIf="selected" [currentProduct]="currentProduct">
     </app-product-details>
+    <app-default *ngIf="!selected" #default></app-default>
   </div>
 </div>
-
-<!-- todo---- Change Product on click-->
-<!-- Price not fetching -->
-<!-- todo---- Make Product details responsive-->

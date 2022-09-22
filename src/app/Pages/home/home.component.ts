@@ -7,7 +7,6 @@ import { RoutingService } from '../../Services/routing.service';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
-  providers: [RoutingService],
 })
 export class HomeComponent implements OnInit {
   @Input()

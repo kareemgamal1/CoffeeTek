@@ -9,7 +9,6 @@ export class RoutingService {
   toLogin() {
     this.router.navigate(['home/login']);
   }
-
   toMenu() {
     this.router.navigate(['menu']);
   }
