@@ -1,0 +1,21 @@
+.foot {
+  background: linear-gradient(
+    to top,
+    rgb(133, 90, 44),
+    rgb(255, 255, 255)
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  bottom: 0;
+}
+.foot p {
+  margin: 0;
+}
+.icons .fa {
+  color: #f44336;
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+.fa-heart-o {
+  color: #f44336;
+}

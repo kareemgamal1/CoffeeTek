@@ -8,9 +8,7 @@ import { filter } from 'rxjs';
   styleUrls: ['./buttons-holder.component.css'],
 })
 export class ButtonsHolderComponent implements OnInit {
-  constructor(private router: Router) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.router.url);
-  }
+  ngOnInit(): void {}
 }

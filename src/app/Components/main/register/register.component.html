@@ -11,7 +11,9 @@
     <input type="password" class="input-field" placeholder="Confirm Password" name="confirmPassword"
       formControlName="secondPassword" />
     <div class="d-flex justify-content-end">
-      <button class="submit-btn">Register</button>
+      <button class="submit-btn" [disabled]="!registerForm.valid">Register</button>
     </div>
+    <p class="error" *ngIf="error">{{error}}</p>
+    <app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
   </form>
 </div>

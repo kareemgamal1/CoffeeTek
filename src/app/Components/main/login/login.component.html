@@ -3,8 +3,9 @@
     <input type="email" class="input-field" placeholder="Email" formControlName="email" />
     <input type="password" class="input-field" placeholder="Password" formControlName="password" />
     <div class="d-flex justify-content-end">
-      <button class="submit-btn">Login</button>
-      <div *ngIf="!isLogged" class="error">Please check your e-mail and password!</div>
+      <button class="submit-btn" type="submit" [disabled]="!loginForm.valid">Login</button>
     </div>
+    <p class="error" *ngIf="error">{{error}}</p>
+    <app-loading-spinner *ngIf="isLoading"></app-loading-spinner>
   </form>
 </div>

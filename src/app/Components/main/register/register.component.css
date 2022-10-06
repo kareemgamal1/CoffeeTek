@@ -1,5 +1,5 @@
 .input-field {
-  padding: 10px 0;
+  padding: 10px 0px;
   border: 0px;
   border-bottom: 1px solid #999;
   background: transparent;
@@ -15,4 +15,15 @@
   border: none;
   border-radius: 30px;
   color: white;
+}
+.submit-btn:disabled {
+  background-color: #999;
+}
+.submit-btn:hover {
+  background: rgb(190, 154, 118);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
 }

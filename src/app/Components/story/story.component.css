@@ -1,0 +1,41 @@
+h1 {
+  font-size: 38px;
+  font-weight: 600;
+}
+.about-us {
+  padding: 3%;
+}
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+.about-col {
+  flex-basis: 48%;
+  padding: 30px 2px;
+}
+.about-col img {
+  width: 100%;
+}
+.about-col h1 {
+  padding-top: 0;
+}
+.about-col p {
+  padding: 15px 0 25px;
+}
+.visit-us-btn {
+  display: inline-block !important;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #845d33;
+  background: #845d33;
+  padding: 12px 34px;
+  font-size: 13px;
+  position: relative;
+  cursor: pointer;
+  float: none !important;
+}
+.visit-us-btn:hover {
+  border: 1px solid #845d33;
+  color: #845d33;
+  background: white;
+}

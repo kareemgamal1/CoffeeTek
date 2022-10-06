@@ -1,0 +1,37 @@
+.input-field {
+  padding: 10px 0;
+  border: 0px;
+  border-bottom: 1px solid #999;
+  background: transparent;
+  color: white;
+}
+
+.input-field::placeholder {
+  color: white;
+}
+
+.submit-btn {
+  background: rgb(190, 154, 118);
+  border: none;
+  border-radius: 30px;
+  color: white;
+}
+.submit-btn:disabled {
+  background-color: #999;
+}
+.submit-btn:hover {
+  background: rgb(190, 154, 118);
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+.spinner {
+  padding-left: 10rem;
+  padding-right: 10rem;
+}
+.spinner ::ng-deep circle {
+  stroke: white;
+  stroke-width: 2% !important;
+}

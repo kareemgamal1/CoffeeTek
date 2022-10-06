@@ -6,7 +6,7 @@
     <a id="menu" [routerLink]="['/menu']" routerLinkActive="active">Menu</a>
     <a id="about" [routerLink]="['/about']" routerLinkActive="active">About</a>
   </div>
-  <div *ngIf="checkLoggedIn()" class="user d-flex align-items-center">
+  <div *ngIf="loggedIn" class="user d-flex align-items-center">
     <a [routerLink]="['/cart-p']" routerLinkActive="active">
       <img src="assets/cart.png" alt="">
     </a>
