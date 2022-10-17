@@ -1,10 +1,6 @@
 <section class="d-flex flex-column">
-  <nav>
-    <app-navbar></app-navbar>
-  </nav>
-  <div class="d-flex justify-content-center align-items-center flex-column mt-5">
-    <app-buttons-holder *ngIf="!inWelcome">
-    </app-buttons-holder>
+  <div class="d-flex justify-content-center align-items-center flex-column ">
+    <app-buttons-holder *ngIf="!inWelcome"> </app-buttons-holder>
     <router-outlet></router-outlet>
   </div>
 </section>

@@ -8,6 +8,8 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class AppComponent implements OnInit {
   title = 'CoffeTek';
+  inMain = true;
   constructor(private route: ActivatedRoute) {}
+
   ngOnInit(): void {}
 }

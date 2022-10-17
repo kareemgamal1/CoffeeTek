@@ -1,5 +1,14 @@
+form {
+  width: 30rem;
+  border-radius: 25px;
+  border: 1px solid rgb(80, 72, 72);
+  border-top: 1px solid rgba(80, 72, 72, 0.3);
+  border-bottom: 1px solid rgba(80, 72, 72, 0.5);
+  padding: 1rem;
+  background-color: rgba(80, 72, 72, 0.178);
+}
 .input-field {
-  padding: 10px 0;
+  padding: 1rem 0;
   border: 0px;
   border-bottom: 1px solid #999;
   background: transparent;

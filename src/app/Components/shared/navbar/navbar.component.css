@@ -1,10 +1,4 @@
-.li-topnav {
-}
-.user img {
-  height: 5vh;
-}
-a,
-.user a {
+a {
   font-size: 1.5rem;
   padding: 1%;
   padding-top: 0;
@@ -14,11 +8,6 @@ a,
   justify-content: center;
 }
 a:hover:not(:first-child:not(:last-child)) {
-  transition: 0.3s;
-  border-bottom: 3px solid #845d334f;
-  transform: scale(105%);
-}
-.user a:hover {
   transition: 0.3s;
   border-bottom: 3px solid #845d334f;
   transform: scale(105%);
@@ -38,7 +27,13 @@ a.active {
   width: 100%;
   padding: 0;
 }
-.user a {
-  margin: 1%;
-  margin-top: 0;
+.user img {
+  width: 50px;
+}
+.wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 99%;
+}
+.website {
 }

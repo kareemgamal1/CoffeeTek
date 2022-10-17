@@ -1,20 +1,23 @@
 <div class="d-flex">
   <!-- Make the navbar occupy the whole top of the screen seperated between. -->
-  <div class="website d-flex align-items-center">
-    <a [routerLink]="['/home']" class="logo"><img src="/assets/logo.png" alt="" /></a>
-    <a [routerLink]="['/home']" [routerLinkActive]="'active'">Home</a>
-    <a id="menu" [routerLink]="['/menu']" routerLinkActive="active">Menu</a>
-    <a id="about" [routerLink]="['/about']" routerLinkActive="active">About</a>
+  <div class="wrap">
+    <div class="website d-flex align-items-center">
+      <a [routerLink]="['/home']" class="logo"><img src="/assets/logo.png" alt="" /></a>
+      <a [routerLink]="['/home']" [routerLinkActive]="'active'">Home</a>
+      <a id="menu" [routerLink]="['/menu']" routerLinkActive="active">Menu</a>
+      <a id="about" [routerLink]="['/about']" routerLinkActive="active">About</a>
+    </div>
+    <div *ngIf="loggedIn" class="user d-flex align-items-center">
+      <a [routerLink]="['/cart-p']" routerLinkActive="active">
+        <img src="assets/cart.png" alt="">
+      </a>
+      <a [routerLink]="['/user']" routerLinkActive="active">
+        <img src="assets/user.png" alt="">
+      </a>
+      <a (click)="logOut()" [routerLink]="['/home']">
+        <img src="assets/logout.png" alt="">
+      </a>
+    </div>
   </div>
-  <div *ngIf="loggedIn" class="user d-flex align-items-center">
-    <a [routerLink]="['/cart-p']" routerLinkActive="active">
-      <img src="assets/cart.png" alt="">
-    </a>
-    <a [routerLink]="['/user']" routerLinkActive="active">
-      <img src="assets/user.png" alt="">
-    </a>
-    <a (click)="logOut()" [routerLink]="['/home']">
-      <img src="assets/logout.png" alt="">
-    </a>
-  </div>
+
 </div>

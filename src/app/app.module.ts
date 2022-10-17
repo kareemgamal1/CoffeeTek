@@ -3,63 +3,26 @@ import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { RouterModule } from '@angular/router';
-import { HomeComponent } from './Pages/home/home.component';
-import { LoginComponent } from './Components/main/login/login.component';
-import { RegisterComponent } from './Components/main/register/register.component';
-import { FooterComponent } from './Components/shared/footer/footer.component';
-import { ProductsComponent } from './Components/products/products.component';
-import { MainComponent } from './Components/main/main.component';
-import { AboutComponent } from './Pages/about/about.component';
-import { ProductComponent } from './Components/products/product/product.component';
-import { ProductDetailsComponent } from './Components/products/product-details/product-details.component';
-import { SubNavbarComponent } from './Components/sub-navbar/sub-navbar.component';
-import { HotDrinksComponent } from './Pages/menu/menu.component';
-import { CartPComponent } from './Pages/cart/cart-p.component';
-import { UserComponent } from './Pages/user/user.component';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
-import { UserNavbarComponent } from './Components/user-navbar/user-navbar.component';
-import { ButtonsHolderComponent } from './Components/main/buttons-holder/buttons-holder.component';
-import { DefaultComponent } from './Components/products/product-details/default/default.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
-import { LoadingSpinnerComponent } from './Components/shared/loading-spinner/loading-spinner.component';
-import { HeadingComponent } from './Components/shared/heading/heading.component';
-import { NavbarComponent } from './Components/shared/navbar/navbar.component';
-import { InfoComponent } from './Components/info/info.component';
-import { StoryComponent } from './Components/story/story.component';
-import { CartComponent } from './Components/cart/cart.component';
+import { HomeModule } from './Pages/home/home.module';
+import { AboutModule } from './Pages/about/about.module';
+import { CartModule } from './Pages/cart/cart.module';
+import { SharedModule } from './Components/shared/shared.module';
+import { UserModule } from './Pages/user/user.module';
+import { MenuModule } from './Pages/menu/menu.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    ProductsComponent,
-    FooterComponent,
-    MainComponent,
-    RegisterComponent,
-    LoginComponent,
-    HotDrinksComponent,
-    AboutComponent,
-    ProductComponent,
-    ProductDetailsComponent,
-    SubNavbarComponent,
-    HeadingComponent,
-    NavbarComponent,
-    CartPComponent,
-    UserComponent,
-    UserNavbarComponent,
-    ButtonsHolderComponent,
-    DefaultComponent,
-    LoadingSpinnerComponent,
-    InfoComponent,
-    StoryComponent,
-    CartComponent,
-  ],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule,
+    SharedModule,
+    HomeModule,
+    AboutModule,
+    CartModule,
+    UserModule,
+    MenuModule,
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
@@ -68,7 +31,6 @@ import { CartComponent } from './Components/cart/cart.component';
     BrowserModule,
     RouterModule,
     BrowserModule,
-    MatProgressSpinnerModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

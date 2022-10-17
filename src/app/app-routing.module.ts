@@ -4,11 +4,11 @@ import { AboutComponent } from './Pages/about/about.component';
 import { UserComponent } from './Pages/user/user.component';
 import { CartPComponent } from './Pages/cart/cart-p.component';
 import { HotDrinksComponent } from './Pages/menu/menu.component';
+import { AuthGuard } from './auth-guard.service';
 import { HomeComponent } from './Pages/home/home.component';
+import { MainComponent } from './Components/main/main.component';
 import { RegisterComponent } from './Components/main/register/register.component';
 import { LoginComponent } from './Components/main/login/login.component';
-import { MainComponent } from './Components/main/main.component';
-import { AuthGuard } from './auth-guard.service';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
