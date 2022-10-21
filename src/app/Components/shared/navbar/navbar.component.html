@@ -8,7 +8,7 @@
       <a id="about" [routerLink]="['/about']" routerLinkActive="active">About</a>
     </div>
     <div *ngIf="loggedIn" class="user d-flex align-items-center">
-      <a [routerLink]="['/cart-p']" routerLinkActive="active">
+      <a [routerLink]="['/cart']" routerLinkActive="active">
         <img src="assets/cart.png" alt="">
       </a>
       <a [routerLink]="['/user']" routerLinkActive="active">
@@ -19,5 +19,4 @@
       </a>
     </div>
   </div>
-
 </div>

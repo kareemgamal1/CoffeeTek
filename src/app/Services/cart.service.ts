@@ -5,7 +5,13 @@ import { Product } from '../Components/products/product.model';
   providedIn: 'root',
 })
 export class CartService {
-  boughtProducts: Product[] = [];
+  boughtProducts: Product[] = [
+    {
+      src: 'assets/espresso.png',
+      name: 'Espresso',
+      originalPrice: 32,
+    },
+  ];
   constructor() {}
 
   addToCart(product: Product) {

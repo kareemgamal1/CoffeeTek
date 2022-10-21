@@ -16,19 +16,42 @@ const routes: Routes = [
     path: 'home',
     component: HomeComponent,
     children: [
-      { path: '', component: MainComponent },
-      { path: 'register', component: RegisterComponent },
-      { path: 'login', component: LoginComponent },
+      { path: '', component: MainComponent, data: { animation: 'mainPage' } },
+      {
+        path: 'register',
+        component: RegisterComponent,
+        data: { animation: 'registerPage' },
+      },
+      {
+        path: 'login',
+        component: LoginComponent,
+        data: { animation: 'loginPage' },
+      },
     ],
+    data: { animation: 'homePage' },
   },
   {
     path: 'about',
     component: AboutComponent,
-    data: { animation: 'togglePage' },
+    data: { animation: 'aboutPage' },
   },
-  { path: 'menu', component: HotDrinksComponent },
-  { path: 'cart-p', component: CartPComponent, canActivate: [AuthGuard] },
-  { path: 'user', component: UserComponent, canActivate: [AuthGuard] },
+  {
+    path: 'menu',
+    component: HotDrinksComponent,
+    data: { animation: 'menuPage' },
+  },
+  {
+    path: 'cart',
+    component: CartPComponent,
+    canActivate: [AuthGuard],
+    data: { animation: 'cartPage' },
+  },
+  {
+    path: 'user',
+    component: UserComponent,
+    canActivate: [AuthGuard],
+    data: { animation: 'userPage' },
+  },
 ];
 
 @NgModule({

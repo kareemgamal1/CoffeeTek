@@ -3,6 +3,16 @@ body {
   background-color: #f2f6fc;
   color: #69707a;
 }
+.user-wrapper {
+  height: 100vh;
+}
+app-user-navbar {
+  flex: 0 1 auto;
+}
+.asd {
+  flex: 1 1 100%;
+  background-color: white;
+}
 button {
   display: inline-block !important;
   text-decoration: none;

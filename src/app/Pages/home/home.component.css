@@ -4,24 +4,9 @@ div {
 }
 
 section {
-  overflow: hidden;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url("/assets/coffe.jpg");
-  background-position: center;
-  background-size: cover;
-  min-height: 100vh;
 }
 
 section::before {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  min-height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url("/assets/coffe.jpg");
-  background-position: center;
-  background-size: cover;
 }
 
 .landing a {

@@ -2,15 +2,15 @@
   min-height: 100%;
   position: relative;
 }
-app-navbar {
+
+.div::before {
   position: absolute;
-  z-index: 1;
+  content: "";
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("/assets/coffe.png");
+  background-size: cover;
   width: 100%;
-}
-app-footer {
-  position: absolute;
-  z-index: 1;
-  width: 100%;
-  bottom: 0;
-  margin-top: auto;
+  height: 100%;
+  z-index: -1;
+  top: 0;
 }

@@ -12,11 +12,13 @@ import { CartModule } from './Pages/cart/cart.module';
 import { SharedModule } from './Components/shared/shared.module';
 import { UserModule } from './Pages/user/user.module';
 import { MenuModule } from './Pages/menu/menu.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [AppComponent],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     SharedModule,
     HomeModule,
     AboutModule,

@@ -9,6 +9,10 @@ html {
 * {
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  /* background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("/assets/coffe.png");
+  background-position: center;
+  background-size: cover; */
 }
 body {
   width: 100%!;
@@ -22,4 +26,5 @@ body {
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: rgb(13, 80, 138);
 }

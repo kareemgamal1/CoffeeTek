@@ -18,7 +18,7 @@ export interface AuthResponseData {
   providedIn: 'root',
 })
 export class AuthService {
-  loggedIn$ = new BehaviorSubject<boolean>(false);
+  loggedIn$ = new BehaviorSubject<boolean>(true);
   user = new BehaviorSubject<User>(null);
   authObs: Observable<AuthResponseData>;
   constructor(private router: Router, private httpClient: HttpClient) {}

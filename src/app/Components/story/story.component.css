@@ -3,15 +3,15 @@ h1 {
   font-weight: 600;
 }
 .about-us {
-  padding: 3%;
+  background-color: white;
+  padding: 3% 3% 0;
 }
 .row {
   display: flex;
   justify-content: space-between;
 }
 .about-col {
-  flex-basis: 48%;
-  padding: 30px 2px;
+  flex-basis: 50%;
 }
 .about-col img {
   width: 100%;
