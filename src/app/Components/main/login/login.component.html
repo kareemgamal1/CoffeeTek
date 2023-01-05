@@ -6,7 +6,7 @@
     <div class="d-flex justify-content-end">
       <button class="submit-btn" type="submit" [disabled]="!loginForm.valid">Login</button>
     </div>
-    <p class="error" *ngIf="error">{{error}}</p>
   </form>
+  <app-alert *ngIf="error" [errorMsg]="error"></app-alert>
   <app-loading-spinner class="mt-2" *ngIf="isLoading"></app-loading-spinner>
 </div>

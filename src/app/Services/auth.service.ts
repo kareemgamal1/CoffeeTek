@@ -2,7 +2,7 @@ import { HttpClient, HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { BehaviorSubject, catchError, Observable, tap, throwError } from 'rxjs';
-import { User } from '../Components/user-navbar/user.model';
+import { User } from '../Pages/user/user.model';
 
 export interface AuthResponseData {
   kind: string;
@@ -18,7 +18,7 @@ export interface AuthResponseData {
   providedIn: 'root',
 })
 export class AuthService {
-  loggedIn$ = new BehaviorSubject<boolean>(true);
+  loggedIn$ = new BehaviorSubject<boolean>(false);
   user = new BehaviorSubject<User>(null);
   authObs: Observable<AuthResponseData>;
   constructor(private router: Router, private httpClient: HttpClient) {}

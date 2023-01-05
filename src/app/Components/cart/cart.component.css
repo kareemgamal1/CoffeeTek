@@ -14,7 +14,7 @@
   font-weight: 700;
   text-align: end;
 }
-
-.items {
-  height: 3rem;
+.item {
+  border-top: #5e69774c 1px solid;
+  border-bottom: #5e69774c 1px solid;
 }

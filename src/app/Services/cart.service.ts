@@ -9,9 +9,11 @@ export class CartService {
     {
       src: 'assets/espresso.png',
       name: 'Espresso',
-      originalPrice: 32,
+      currentPrice: 32,
+      amount: 1,
     },
   ];
+
   constructor() {}
 
   addToCart(product: Product) {

@@ -6,6 +6,7 @@ import { ProductsComponent } from 'src/app/Components/products/products.componen
 import { SharedModule } from 'src/app/Components/shared/shared.module';
 import { DefaultComponent } from 'src/app/Components/products/product-details/default/default.component';
 import { CommonModule } from '@angular/common';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,7 @@ import { CommonModule } from '@angular/common';
     ProductsComponent,
     DefaultComponent,
   ],
-  imports: [SharedModule, CommonModule],
+  imports: [SharedModule, CommonModule, HttpClientModule],
   exports: [
     HotDrinksComponent,
     ProductComponent,

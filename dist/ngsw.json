@@ -1,0 +1,131 @@
+{
+  "configVersion": 1,
+  "timestamp": 1672925789787,
+  "index": "/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/favicon.ico",
+        "/index.html",
+        "/main.15e3c57b04d9feb8.js",
+        "/manifest.webmanifest",
+        "/polyfills.b153272251038983.js",
+        "/runtime.bcc4422b9b5cf4a4.js",
+        "/scripts.3ab7b00d5fc3ec38.js",
+        "/styles.b9a05d00db73c959.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/assets/about-us.png",
+        "/assets/banner.jpg",
+        "/assets/cappuccino.png",
+        "/assets/cart.png",
+        "/assets/coffe.png",
+        "/assets/coffeecup.png",
+        "/assets/coffeecupselected.png",
+        "/assets/espresso.png",
+        "/assets/icons/icon-128x128.png",
+        "/assets/icons/icon-144x144.png",
+        "/assets/icons/icon-152x152.png",
+        "/assets/icons/icon-192x192.png",
+        "/assets/icons/icon-384x384.png",
+        "/assets/icons/icon-512x512.png",
+        "/assets/icons/icon-72x72.png",
+        "/assets/icons/icon-96x96.png",
+        "/assets/latte-macchiato.png",
+        "/assets/latte.png",
+        "/assets/logo.png",
+        "/assets/logout.png",
+        "/assets/mocha.png",
+        "/assets/onesugarcube.png",
+        "/assets/onesugarcubeselected.png",
+        "/assets/person.png",
+        "/assets/right-arow.png",
+        "/assets/threesugarcubes.png",
+        "/assets/threesugarcubeselected.png",
+        "/assets/twosugarcubes.png",
+        "/assets/twosugarcubeselected.png",
+        "/assets/user.png",
+        "/assets/zerosugarcube.png",
+        "/assets/zerosugarcubeselected.png"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/assets/about-us.png": "30cd4c895ab322952112d8ac09a06149666123ad",
+    "/assets/banner.jpg": "57fb72555ca1a58102d25de251fb9b21451a34ad",
+    "/assets/cappuccino.png": "c54a362c878709a179ca9735acf0e806ed349e36",
+    "/assets/cart.png": "8387b09ee945512b7c832db19bb2adc49c2e8445",
+    "/assets/coffe.png": "56274418df94049a4e09c7cfc0e0f454f9b41279",
+    "/assets/coffeecup.png": "891c01d88972fc0648abbd825e19b3d2a7b9dabe",
+    "/assets/coffeecupselected.png": "6adbddc6f593624f4d8bdb50c338c98d2b4e075f",
+    "/assets/espresso.png": "6d4d6a179b8cd393ea5c773c94b44f39783db89d",
+    "/assets/icons/icon-128x128.png": "dae3b6ed49bdaf4327b92531d4b5b4a5d30c7532",
+    "/assets/icons/icon-144x144.png": "b0bd89982e08f9bd2b642928f5391915b74799a7",
+    "/assets/icons/icon-152x152.png": "7479a9477815dfd9668d60f8b3b2fba709b91310",
+    "/assets/icons/icon-192x192.png": "1abd80d431a237a853ce38147d8c63752f10933b",
+    "/assets/icons/icon-384x384.png": "329749cd6393768d3131ed6304c136b1ca05f2fd",
+    "/assets/icons/icon-512x512.png": "559d9c4318b45a1f2b10596bbb4c960fe521dbcc",
+    "/assets/icons/icon-72x72.png": "c457e56089a36952cd67156f9996bc4ce54a5ed9",
+    "/assets/icons/icon-96x96.png": "3914125a4b445bf111c5627875fc190f560daa41",
+    "/assets/latte-macchiato.png": "63501685afa0c9ef54997711f9114882a791d677",
+    "/assets/latte.png": "e498fc1ac3260619d6345370dc5d151654b59078",
+    "/assets/logo.png": "7e3d79ce101c3fdbb152fed19f352828edc5e69c",
+    "/assets/logout.png": "a7f4c14da0fcc72b3c7271dc43b2a537d98e177f",
+    "/assets/mocha.png": "80c07d51bccd118abc32ef7617858a5316e4b523",
+    "/assets/onesugarcube.png": "ba8fa67483c5831e426ec4ecb2c565d90e3bb528",
+    "/assets/onesugarcubeselected.png": "9871038b79170a598f50e0d02856828593d546c0",
+    "/assets/person.png": "ce36b67ef826c53064c4cd4ac019bd0b04a8b3d8",
+    "/assets/right-arow.png": "e1c5464c42322259bc1ff7c07d4b26785a7dabae",
+    "/assets/threesugarcubes.png": "cb03a38a09e2019c9104bc5198e60b076db4bcce",
+    "/assets/threesugarcubeselected.png": "16ad0facbdf6180c5e23108f93474b64d6391814",
+    "/assets/twosugarcubes.png": "b2cf6699b8cbbb794f9c77c8aa29a0702f11e8af",
+    "/assets/twosugarcubeselected.png": "07f77b33ceb2c0eadb52c382e330d31ab531a7da",
+    "/assets/user.png": "79bb56094c2bf3a86215141605b8929c85815fc1",
+    "/assets/zerosugarcube.png": "431b5dc6cb14d157ae1d29ca9d6e7ecfac7a24f7",
+    "/assets/zerosugarcubeselected.png": "ba0e1cf30d5fded8020751753c31712483f6c7f5",
+    "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
+    "/index.html": "67e37ab2460e28dd17f7e102b6fffce078b2cb10",
+    "/main.15e3c57b04d9feb8.js": "b12f88dbc90b694bb37bc1477f94a89fffe47953",
+    "/manifest.webmanifest": "609c5b0a5e86abfac866a11cc2940a8a1436e8be",
+    "/polyfills.b153272251038983.js": "90398d70c60365ddc4019fc829b702ab4d75a211",
+    "/runtime.bcc4422b9b5cf4a4.js": "3c6cd50046b0779b86c3658c7c1083f9113fe08c",
+    "/scripts.3ab7b00d5fc3ec38.js": "f72db3c3075024324a4d648abe9a7d556e013738",
+    "/styles.b9a05d00db73c959.css": "ab941aaf11f3ff9f4704e7d14e2c4e051c300b4e"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}

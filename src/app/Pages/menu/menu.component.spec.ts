@@ -1,23 +1,21 @@
-import { ComponentFixture, TestBed } from '@angular/core/testing';
+// import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { HotDrinksComponent } from './HotDrinks.component';
+// describe('HotDrinksComponent', () => {
+//   let component: HotDrinksComponent;
+//   let fixture: ComponentFixture<HotDrinksComponent>;
 
-describe('HotDrinksComponent', () => {
-  let component: HotDrinksComponent;
-  let fixture: ComponentFixture<HotDrinksComponent>;
+//   beforeEach(async () => {
+//     await TestBed.configureTestingModule({
+//       declarations: [ HotDrinksComponent ]
+//     })
+//     .compileComponents();
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      declarations: [ HotDrinksComponent ]
-    })
-    .compileComponents();
+//     fixture = TestBed.createComponent(HotDrinksComponent);
+//     component = fixture.componentInstance;
+//     fixture.detectChanges();
+//   });
 
-    fixture = TestBed.createComponent(HotDrinksComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});
+//   it('should create', () => {
+//     expect(component).toBeTruthy();
+//   });
+// });

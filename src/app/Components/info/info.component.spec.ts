@@ -11,7 +11,6 @@ describe('InfoComponent', () => {
       declarations: [ InfoComponent ]
     })
     .compileComponents();
-
     fixture = TestBed.createComponent(InfoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

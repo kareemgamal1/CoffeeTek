@@ -46,11 +46,10 @@ export class RegisterComponent implements OnInit {
           setTimeout(() => {
             this.isLoading = false;
           }, 1000);
-          this.router.navigate(['../login'], { relativeTo: this.route });
+          this.router.navigate(['/menu'], { relativeTo: this.route });
         },
         (error) => {
           this.error = error;
-          console.log(error);
         }
       );
   }

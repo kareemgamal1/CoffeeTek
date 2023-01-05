@@ -1,0 +1,12 @@
+.errorBody {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.errorMsg {
+  background-color: rgba(255, 0, 0, 0.39);
+  color: white;
+  font-size: smaller;
+  border-radius: 30px;
+  padding: 0.5rem;
+}

@@ -1,9 +1,9 @@
-<div class="wrapper justify-content-center gap-3">
-  <div class="menu col-lg-5 col-s-7">
+<div class="row justify-content-center ">
+  <div class="menu col-lg-5 col-md-5 col-s-12">
     <app-product *ngFor="let product of products" [currentProduct]="product">
     </app-product>
   </div>
-  <div class="product col-lg-3 col-s-7 d-flex justify-content-center">
+  <div class="product col-lg-3 col-md-3 col-s-12 d-flex justify-content-center">
     <app-product-details *ngIf="selected" [currentProduct]="currentProduct">
     </app-product-details>
     <app-default *ngIf="!selected" #default></app-default>

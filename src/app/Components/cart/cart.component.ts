@@ -10,11 +10,10 @@ export class CartComponent implements OnInit {
   cartProducts = this.cart.getCart();
   totalPrice: number = 0;
   constructor(private cart: CartService) {}
-  getCart() {}
   deleteProducts() {}
   ngOnInit(): void {
     for (const product of this.cartProducts) {
-      this.totalPrice += product.totalPrice;
+      this.totalPrice += product.amount * product.currentPrice;
     }
   }
 }
