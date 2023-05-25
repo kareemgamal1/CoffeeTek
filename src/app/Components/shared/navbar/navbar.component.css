@@ -6,6 +6,7 @@ a {
   color: white;
   display: flex;
   justify-content: center;
+  margin: 0.5rem;
 }
 a:hover:not(:first-child:not(:last-child)) {
   transition: 0.3s;

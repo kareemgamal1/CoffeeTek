@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1672925789787,
+  "timestamp": 1685037182884,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/favicon.ico",
         "/index.html",
-        "/main.15e3c57b04d9feb8.js",
+        "/main.4fad7e3c28d8fc8c.js",
         "/manifest.webmanifest",
         "/polyfills.b153272251038983.js",
         "/runtime.bcc4422b9b5cf4a4.js",
@@ -61,7 +61,8 @@
         "/assets/twosugarcubeselected.png",
         "/assets/user.png",
         "/assets/zerosugarcube.png",
-        "/assets/zerosugarcubeselected.png"
+        "/assets/zerosugarcubeselected.png",
+        "/coffe.5c8e02596cddfa9e.png"
       ],
       "patterns": []
     }
@@ -100,9 +101,10 @@
     "/assets/user.png": "79bb56094c2bf3a86215141605b8929c85815fc1",
     "/assets/zerosugarcube.png": "431b5dc6cb14d157ae1d29ca9d6e7ecfac7a24f7",
     "/assets/zerosugarcubeselected.png": "ba0e1cf30d5fded8020751753c31712483f6c7f5",
+    "/coffe.5c8e02596cddfa9e.png": "56274418df94049a4e09c7cfc0e0f454f9b41279",
     "/favicon.ico": "22f6a4a3bcaafafb0254e0f2fa4ceb89e505e8b2",
-    "/index.html": "67e37ab2460e28dd17f7e102b6fffce078b2cb10",
-    "/main.15e3c57b04d9feb8.js": "b12f88dbc90b694bb37bc1477f94a89fffe47953",
+    "/index.html": "a5835efc2f602d214a35c53592331feacbef2e9d",
+    "/main.4fad7e3c28d8fc8c.js": "9e84aba9dfcae5d1128b022805db61cc172c54e5",
     "/manifest.webmanifest": "609c5b0a5e86abfac866a11cc2940a8a1436e8be",
     "/polyfills.b153272251038983.js": "90398d70c60365ddc4019fc829b702ab4d75a211",
     "/runtime.bcc4422b9b5cf4a4.js": "3c6cd50046b0779b86c3658c7c1083f9113fe08c",

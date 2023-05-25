@@ -19,23 +19,23 @@
     <p>Size:</p>
     <button class="small" (click)="selectSize(1)">
       <img *ngIf="this.currentProduct.sizeSelected==1;else original"
-        src="/assets/coffeecupselected.png" />
+        src="assets/coffeecupselected.png" />
       <ng-template #original>
-        <img src="/assets/coffeecup.png" />
+        <img src="assets/coffeecup.png" />
       </ng-template>
     </button>
     <button class="medium" (click)="selectSize(2)">
       <img *ngIf="this.currentProduct.sizeSelected==2;else original"
-        src="/assets/coffeecupselected.png" />
+        src="assets/coffeecupselected.png" />
       <ng-template #original>
-        <img src="/assets/coffeecup.png" />
+        <img src="assets/coffeecup.png" />
       </ng-template>
     </button>
     <button class="large" (click)="selectSize(3)">
       <img *ngIf="this.currentProduct.sizeSelected==3;else original"
-        src="/assets/coffeecupselected.png" />
+        src="assets/coffeecupselected.png" />
       <ng-template #original>
-        <img src="/assets/coffeecup.png" />
+        <img src="assets/coffeecup.png" />
       </ng-template>
     </button>
   </div>
@@ -44,30 +44,30 @@
     <p>Sugar:</p>
     <button class="small-s" (click)="selectSugar(1)">
       <img *ngIf="this.currentProduct.sugarSelected==1;else sugar1"
-        src="/assets/zerosugarcubeselected.png" />
+        src="assets/zerosugarcubeselected.png" />
       <ng-template #sugar1>
-        <img src="/assets/zerosugarcube.png" />
+        <img src="assets/zerosugarcube.png" />
       </ng-template>
     </button>
     <button class="medium-s" (click)="selectSugar(2)">
       <img *ngIf="this.currentProduct.sugarSelected==2;else sugar2"
-        src="/assets/onesugarcubeselected.png" />
+        src="assets/onesugarcubeselected.png" />
       <ng-template #sugar2>
-        <img src="/assets/onesugarcube.png" />
+        <img src="assets/onesugarcube.png" />
       </ng-template>
     </button>
     <button class="large-s" (click)="selectSugar(3)">
       <img *ngIf="this.currentProduct.sugarSelected==3;else sugar3"
-        src="/assets/twosugarcubeselected.png" />
+        src="assets/twosugarcubeselected.png" />
       <ng-template #sugar3>
-        <img src="/assets/twosugarcubes.png" />
+        <img src="assets/twosugarcubes.png" />
       </ng-template>
     </button>
     <button class="extra-s" (click)="selectSugar(4)">
       <img *ngIf="this.currentProduct.sugarSelected==4;else sugar4"
-        src="/assets/threesugarcubeselected.png" />
+        src="assets/threesugarcubeselected.png" />
       <ng-template #sugar4>
-        <img src="/assets/threesugarcubes.png" />
+        <img src="assets/threesugarcubes.png" />
       </ng-template>
     </button>
   </div>

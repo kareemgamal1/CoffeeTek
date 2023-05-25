@@ -7,7 +7,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { AppRoutingModule } from 'src/app/app-routing.module';
-import { AlertComponent } from '../alert/alert.component';
+import { AlertComponent } from './alert/alert.component';
 
 @NgModule({
   imports: [
