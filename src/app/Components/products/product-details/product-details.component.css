@@ -86,7 +86,7 @@
 }
 
 .add-to-cart {
-  display: inline-block !important;
+  display: inline-block;
   text-decoration: none;
   color: white;
   border: 1px solid #845d33;
@@ -95,7 +95,23 @@
   font-size: 13px;
   position: relative;
   cursor: pointer;
-  float: none !important;
+}
+
+.added {
+  position: absolute;
+  top: 0;
+  right: -50px;
+  /* adjust this value to position the image as desired */
+  -webkit-animation: none;
+  -moz-animation: none;
+  -o-animation: none;
+  -ms-animation: none;
+  animation: none;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
 }
 
 .add-to-cart:hover {

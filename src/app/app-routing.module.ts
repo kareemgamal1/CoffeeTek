@@ -20,12 +20,12 @@ const routes: Routes = [
       {
         path: 'register',
         component: RegisterComponent,
-        data: { animation: 'registerPage' },
+        data: { animation: 'registerPage' },canActivate:[AuthGuard]
       },
       {
         path: 'login',
         component: LoginComponent,
-        data: { animation: 'loginPage' },
+        data: { animation: 'loginPage' },canActivate:[AuthGuard]
       },
     ],
     data: { animation: 'homePage' },

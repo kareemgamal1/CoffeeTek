@@ -7,9 +7,9 @@ import { CartService } from 'src/app/Services/cart.service';
   styleUrls: ['./cart.component.css'],
 })
 export class CartComponent implements OnInit {
+  constructor(private cart: CartService) {}
   cartProducts = this.cart.getCart();
   totalPrice: number = 0;
-  constructor(private cart: CartService) {}
   deleteProducts() {}
   ngOnInit(): void {
     for (const product of this.cartProducts) {

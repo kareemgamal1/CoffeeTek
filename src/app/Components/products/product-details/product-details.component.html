@@ -73,5 +73,6 @@
   </div>
   <div class="total mb-3">Total: <span
       class="total-amount">{{this.currentProduct.totalPrice}}</span> EGP.</div>
-  <button class="add-to-cart" (click)="addToCart()">Add To Cart</button>
+  <button class="add-to-cart" (click)="addToCart()">Add To Cart<img class="added" id="gif"
+      src=" assets/added.gif" width="50px" alt="added to cart" [hidden]="!showAddedImg"></button>
 </div>

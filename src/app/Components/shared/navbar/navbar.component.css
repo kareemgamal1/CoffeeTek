@@ -8,33 +8,40 @@ a {
   justify-content: center;
   margin: 0.5rem;
 }
-a:hover:not(:first-child:not(:last-child)) {
+
+.website a:hover:not(:first-child) {
   transition: 0.3s;
   border-bottom: 3px solid #845d334f;
   transform: scale(105%);
 }
-.user a:hover:last-child {
-  transform: scale(100%);
+
+.user a:hover {
+  transition: 0.3s;
+  border-bottom: 3px solid #845d334f;
+  transform: scale(105%);
 }
+
 a.active {
   border-bottom: 3px solid #845d33;
 }
+
 .logo {
   margin: 0;
   padding: 0 !important;
   width: 7%;
 }
+
 .logo img {
   width: 100%;
   padding: 0;
 }
+
 .user img {
-  width: 50px;
+  height: 50px;
 }
+
 .wrap {
   display: flex;
   justify-content: space-between;
   width: 99%;
-}
-.website {
 }

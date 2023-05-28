@@ -18,8 +18,8 @@ export class ProductDetailsComponent implements OnInit {
     private ProductService: ProductsService,
     private authService: AuthService,
     private router: Router
-  ) {}
-
+  ) { }
+  showAddedImg: Boolean = false;
   ngOnInit(): void {
     this.ProductService.currentProduct.subscribe((product) => {
       this.currentProduct = product;
@@ -33,6 +33,10 @@ export class ProductDetailsComponent implements OnInit {
   addToCart() {
     if (this.loggedIn) {
       this.CartService.addToCart(this.currentProduct);
+      this.showAddedImg = true;
+      setTimeout(() => {
+        this.showAddedImg = false;
+      }, 2000); // hide the image after 2 seconds
     } else {
       //show overlay which has button (ok) that takes him to login page
       this.router.navigate(['/home/login']);

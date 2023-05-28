@@ -11,20 +11,13 @@ export class NavbarComponent implements OnInit {
   constructor(private AuthService: AuthService) {}
 
   ngOnInit(): void {
-    console.log(this.AuthService.isAuthenticated());
-    this.AuthService.loggedIn$.subscribe((loggedIn) => {
-      console.log(loggedIn);
-      this.loggedIn = loggedIn;
-    });
+    this.AuthService.loggedIn$.subscribe(
+      (loggedIn: boolean) => {
+        this.loggedIn = loggedIn;
+      }
+    );
   }
 
-  deleteProducts() {
-    localStorage.removeItem('products');
-  }
-  checkLoggedIn() {
-    if (this.AuthService.isAuthenticated()) return true;
-    else return false;
-  }
   logOut() {
     this.AuthService.logout();
   }
